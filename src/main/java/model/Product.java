@@ -3,11 +3,17 @@ package model;
 
 import lombok.*;
 
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
 @Getter
+@Setter
+@EqualsAndHashCode(onlyExplicitlyIncluded = true)
+@ToString(onlyExplicitlyIncluded = true)
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class Product {
+
+    @ToString.Include
+    @EqualsAndHashCode.Include
     private Integer id;
     private String name;
     private String description;
