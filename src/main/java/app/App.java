@@ -23,7 +23,7 @@ public class App {
         // nuevo valor
         Product p = new Product();
 
-        p.setId(1);
+
         p.setName(name);
         System.out.println(p.getName());
 
